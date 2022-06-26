@@ -87,6 +87,9 @@ body {
   font-family: var(--font-family-text1);
   color: var(--clr-dark);
   letter-spacing: 0.2em;
+
+  display: flex;
+  justify-content: center;
 }
 ul {
   list-style: none;
@@ -98,4 +101,37 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/*========================= NAVIGATION BAR =========================*/
+header {
+    height: 3.5rem;
+    position: fixed;
+    background-color: var(--clr-green);
+    margin: 40px;
+    z-index: 10;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__links {
+    width: 350px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__links li a:hover:not(.active) {
+    background-color: #111;
+}
+/* .active {
+    background-color: #00d0ff;
+} */
+.hor__line {
+    width: 60px;
+    height: 2px;
+    background-color: black;
 }
