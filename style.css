@@ -1,0 +1,101 @@
+/*========================= GOOGLE FONTS =========================*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;400;500;600&display=swap");
+
+/*========================= VARIABLES CSS =========================*/
+:root {
+  /*____________________ Colors ____________________*/
+  --clr-dark: #0E1515;
+  --clr-gray: #A0A3A3;
+  --clr-light: #d4cfc2;
+  --clr-green: #354242;
+  --clr-yellow: #FFC700;
+  --clr-hover: orangered;
+
+  /*____________________ Font and typography ____________________*/
+  --font-family-text1: 'Space Grotesk', sans-serif;
+  --font-family-text2: "Poppins", sans-serif;
+
+  /*____________________ Font Size ____________________*/
+  --fs-title: 1.75rem;
+  --fs-logo: 1.5rem;
+
+  --fs-huge: 7rem;
+  --fs-larger: 2.5rem;
+  --fs-large: 2rem;
+  --fs-medium: 1.25rem;
+  --fs-small: 1rem;
+  --fs-smaller: 0.75rem;
+
+  /*____________________ z index ____________________*/
+  --z-behind: -10;
+  --z-tooltip: 10;
+  --z-fixed: 20;
+  --z-modal: 30;
+}
+
+/*____________________ Title and Text ____________________*/
+.title__big {
+    font-size: 7rem;
+    font-weight: 300;
+}
+.title__blue {
+    color: #0038FF;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+}
+.title__medium {
+    font-size: 2.25rem;
+}
+.title__small {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.text__subtitle {
+    color: #97A5D9;
+    font-size: 1.125rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+/*____________________ Button ____________________*/
+/* .button {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-light);
+  font-weight: var(--fw-medium);
+  color: var(--clr-light);
+  font-size: var(--fs-small);
+}
+.button:hover {
+  color: red;
+  background-color: white;
+} */
+/*========================= BASE =========================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.25rem;
+  font-weight: 200;
+  font-family: var(--font-family-text1);
+  color: var(--clr-dark);
+  letter-spacing: 0.2em;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
