@@ -10,3 +10,12 @@ let swiper = new Swiper(".about__container", {
         rotate: 0,
     },
 })
+
+/*==================== Accordion Experience ====================*/
+const accordion = document.getElementsByClassName('accordion__item');
+
+for (let i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
