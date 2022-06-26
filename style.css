@@ -108,9 +108,11 @@ img {
     width: 100vw;
     padding-top: 180px;
     background: linear-gradient(180deg, #AFAFAF 0%, rgba(49, 100, 100, 0) 100%);
+}
 
-    display: flex;
-    justify-content: center;
+.title__bottom {
+    font-size: 2rem;
+    padding-top: 150px;
 }
 
 /*========================= NAVIGATION BAR =========================*/
@@ -130,7 +132,7 @@ header {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav__links li a {
@@ -150,6 +152,10 @@ header {
 }
 
 /*========================= HERO SECTION =========================*/
+.hero__section {
+    display: flex;
+    justify-content: center;
+}
 .profile__container {
     height: 600px;
     width: 300px;
@@ -181,5 +187,60 @@ header {
 .border__right {
     grid-column: 3;
     background-color: orangered;
+}
+
+
+/*========================= ABOUT SECTION =========================*/
+.about__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__card {
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    background-color: var(--clr-green);
+}
+
+.about__card img {
+    width: 250px;
+    height: 400px;
+    filter: grayscale(1);
+    object-fit: cover;
+}
+  
+.about__data {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+  
+.about__title, 
+.about__description {
+    color: white;
+}
+  
+.about__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+  
+.about__description {
+    display: block;
+    font-size: 12px;
+}
+  
+.about__img {
+    transition: 0.3s;
+}
+  
+.discover__img:hover {
+    transform: 1.1;
+}
+  
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
 }
 
