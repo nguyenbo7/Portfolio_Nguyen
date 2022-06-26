@@ -1,7 +1,7 @@
 /*========================= GOOGLE FONTS =========================*/
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
 /*========================= VARIABLES CSS =========================*/
 :root {
   /*____________________ Colors ____________________*/
@@ -15,6 +15,7 @@
   /*____________________ Font and typography ____________________*/
   --font-family-text1: 'Space Grotesk', sans-serif;
   --font-family-text2: "Poppins", sans-serif;
+  --font-family-text-barcode: 'Libre Barcode 128 Text', cursive;
 
   /*____________________ Font Size ____________________*/
   --fs-title: 1.75rem;
@@ -119,7 +120,7 @@ img {
     text-align: center;
     /* padding-top: 150px; */
     position: absolute;
-    width: 200px;
+    width: 250px;
     bottom: 50px;
 
 }
@@ -166,13 +167,13 @@ header {
     justify-content: center;
 }
 .profile__container {
-    height: 600px;
+    height: 550px;
     width: 300px;
     background: linear-gradient(180deg, #717171 0%, rgba(0, 0, 0, 0.1) 100%);
 
     display: grid;
     grid-template-columns: 15px 270px 15px;
-    grid-template-rows: 15px 585px;
+    grid-template-rows: 15px 535px;
 }
 
 .border__top {
@@ -186,7 +187,7 @@ header {
 .profile__introduce {
     font-size: 12px;
     line-height: 160%;
-    margin: 30px 0 0 10px;
+    margin: 25px 0 0 10px;
     
 }
 .tab__space {
@@ -324,4 +325,38 @@ header {
   
 .accordion__item.active .accordion__title {
     color: orangered;
-  }
+}
+
+/*========================= CONTACT SECTION =========================*/
+.contact__container {
+    height: 450px;
+    width: 380px;
+    color: var(--clr-dark);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--clr-green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__container:hover {
+    background-color: orangered;
+}
+
+.contact__title {
+    font-weight: 600;
+    font-size: 80px;
+    margin: 40px 0;
+}
+
+.contact__links > ul {
+    display: flex;
+}
+
+.contact__barcode {
+    font-size: 48px;
+    font-family: var(--font-family-text-barcode);
+    margin: 60px;
+}
